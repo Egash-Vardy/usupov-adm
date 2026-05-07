@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment | Rage Russia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: white; }
+        .card { background: #1e293b; border: 1px solid #334155; transition: 0.3s; }
+        .card:hover { border-color: #3b82f6; transform: translateY(-5px); }
+    </style>
+</head>
+<body class="font-sans">
+    <nav class="p-6 border-b border-slate-800 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-500">RAGE RUSSIA <span class="text-white text-sm font-light">RECRUITMENT</span></h1>
+        <button class="bg-blue-600 px-6 py-2 rounded-lg hover:bg-blue-700">Войти через VK</button>
+    </nav>
+
+    <main class="max-w-6xl mx-auto mt-12 p-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">Выберите направление</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="card p-6 rounded-2xl">
+                <h3 class="text-xl font-bold mb-2">Агент Поддержки</h3>
+                <p class="text-slate-400 mb-4 text-sm">Помощь игрокам, знание команд и правил сервера.</p>
+                <span class="text-green-500 text-xs font-bold uppercase">Открыто</span>
+                <button onclick="openForm('helper')" class="w-full mt-4 bg-slate-700 py-2 rounded-lg hover:bg-blue-600">Подать заявку</button>
+            </div>
+
+            <div class="card p-6 rounded-2xl">
+                <h3 class="text-xl font-bold mb-2">Лидер фракции</h3>
+                <p class="text-slate-400 mb-4 text-sm">Управление организацией, развитие состава.</p>
+                <span class="text-green-500 text-xs font-bold uppercase">Открыто</span>
+                <button onclick="openForm('leader')" class="w-full mt-4 bg-slate-700 py-2 rounded-lg hover:bg-blue-600">Подать заявку</button>
+            </div>
+
+            <div class="card p-6 rounded-2xl opacity-50">
+                <h3 class="text-xl font-bold mb-2">Администратор</h3>
+                <p class="text-slate-400 mb-4 text-sm">Только через пост лидера или агента поддержки.</p>
+                <span class="text-red-500 text-xs font-bold uppercase">Закрыто</span>
+                <button disabled class="w-full mt-4 bg-slate-800 py-2 rounded-lg cursor-not-allowed">Мест нет</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
