@@ -22,7 +22,6 @@
             padding: 0;
         }
 
-        /* Шапка в стиле форума */
         header {
             background-color: var(--nav-bg);
             padding: 15px 50px;
@@ -37,10 +36,6 @@
             display: flex;
             align-items: center;
             gap: 15px;
-        }
-
-        .logo-section img {
-            height: 50px;
         }
 
         .logo-text {
@@ -61,7 +56,6 @@
             color: var(--accent-orange);
         }
 
-        /* Контент */
         .container {
             max-width: 1100px;
             margin: 40px auto;
@@ -80,7 +74,6 @@
             text-transform: uppercase;
         }
 
-        /* Сетка вакансий */
         .vacancy-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -122,7 +115,6 @@
             margin-bottom: 25px;
         }
 
-        /* Кнопки как на USUPOV RP */
         .btn {
             background-color: var(--accent-orange);
             color: white;
@@ -157,14 +149,11 @@
 
 <header>
     <div class="logo-section">
-        <img src="https://i.imgur.com/your_logo_here.png" alt="USUPOV LOGO">
         <div class="logo-text">USUPOV ROLE PLAY</div>
     </div>
     <nav>
-        <a href="#">Главная</a>
-        <a href="#">Вакансии</a>
-        <a href="#">Правила</a>
-        <a href="#" class="btn">Личный кабинет</a>
+        <a href="index.html">Главная</a>
+        <a href="https://forum.usupovrp.ru" target="_blank">Форум</a>
     </nav>
 </header>
 
@@ -181,7 +170,7 @@
                 <h2>Администратор</h2>
                 <p>Станьте частью команды управления сервером. Помогайте игрокам и следите за соблюдением правил проекта.</p>
             </div>
-            <a href="#" class="btn">Подать заявку</a>
+            <a href="apply.html" class="btn">Подать заявку</a>
         </div>
 
         <div class="card">
@@ -190,7 +179,7 @@
                 <h2>Восстановление</h2>
                 <p>Вы ранее занимали пост администратора или лидера? Подайте заявку на восстановление в должности.</p>
             </div>
-            <a href="#" class="btn btn-recovery">Восстановиться</a>
+            <a href="apply.html" class="btn btn-recovery">Восстановиться</a>
         </div>
     </div>
 </div>
